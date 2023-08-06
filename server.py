@@ -24,10 +24,7 @@ def subtract():
         return jsonify(error='invalid request')
     first=data['first']
     second=data['second']
-    if first>second:
-        result=first-second
-    else:
-        result=second-first
+    result=first-second
     return jsonify(result=result),200
 
 
